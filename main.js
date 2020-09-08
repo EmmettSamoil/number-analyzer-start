@@ -19,3 +19,32 @@ function analyzeNumber() {
 
 
 // Analyze Functions
+function getSign() {
+
+    //Get Number
+    let num = Number(numEl.value);
+
+    if (num < 0)
+    return 'neg';
+    else if (num > 0)
+    return 'pos';
+    else 
+    return 'zero';
+}
+
+function evenOrOdd() {
+    let num = Number(numEl.value);
+   if (num % 2)
+   return 'odd';
+   else 
+   return 'even';
+}
+
+function multipleOf10() {
+    let num = Number(numEl.value);
+    if (num % 10)
+    return 'no';
+    else 
+    return 'yes';
+
+}
